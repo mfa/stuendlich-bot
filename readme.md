@@ -24,5 +24,5 @@ This Python script uses no other dependencies except core Python 3.7+.
 - `visibility` should be either "private" or "unlisted" - don't be rude and use public
 - add a cron to trigger the script every hour, i.e.
 ```
-0 * * * * /path/to/stuendlich.py
+0 * * * * python /path/to/stuendlich.py
 ```
