@@ -5,6 +5,8 @@
 Send a message to all followers in the activitypub network (Mastodon, GotoSocial, ...) every full hour.
 This Python script uses no other dependencies except core Python 3.7+.
 
+Deployed version: [@stuendlich@cress.space](https://fedi.cress.space/@stuendlich) (German, Europe/Berlin, private)
+
 
 ## setup
 
