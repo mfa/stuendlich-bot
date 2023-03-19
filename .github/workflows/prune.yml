@@ -3,7 +3,7 @@ name: Prune old statuses from stuendlich bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: '18 33 * * *'
+    - cron: '33 18 * * *'
 
 jobs:
   build:
