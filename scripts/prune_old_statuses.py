@@ -5,6 +5,7 @@ import requests
 
 BASE_URL = "https://fedi.cress.space"
 PRUNE_OLDER_THAN_DAYS = 28
+# add gotosocial access token to repo secrets in Github
 TOKEN = os.environ["GOTOSOCIAL_ACCESS_TOKEN"]
 headers = {"Authorization": f"Bearer {TOKEN}"}
 
