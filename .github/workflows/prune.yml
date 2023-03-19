@@ -18,6 +18,6 @@ jobs:
         run: |
           pip install requests
       - name: call prune script
-        run: python scripts/prune_old_statuses.py
-        with:
+        env:
           GOTOSOCIAL_ACCESS_TOKEN: ${{ secrets.GOTOSOCIAL_ACCESS_TOKEN }}
+        run: python scripts/prune_old_statuses.py
