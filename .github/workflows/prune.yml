@@ -1,4 +1,4 @@
-name: Prune old statuses from stuendlich bot
+name: Prune old statuses
 
 on:
   workflow_dispatch:
