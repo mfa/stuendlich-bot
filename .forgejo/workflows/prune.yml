@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
-        run: |
-          pip install requests
+      - name: Install uv
+        uses: https://github.com/astral-sh/setup-uv@v6
+        with:
+          python-version: 3.13
+          enable-cache: true
       - name: call prune script
+        run: uvx --with requests python scripts/prune_old_statuses.py
         env:
           GOTOSOCIAL_ACCESS_TOKEN: ${{ secrets.GOTOSOCIAL_ACCESS_TOKEN }}
-        run: python scripts/prune_old_statuses.py
